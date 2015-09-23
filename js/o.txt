@@ -1,1 +1,1 @@
-['chess','poker','monopoly','scrabble']
+chess,poker,monopoly,scrabble

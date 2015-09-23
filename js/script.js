@@ -128,8 +128,10 @@ if (global_li_change === null){
 
 
     });
-
-
+alert('new3');
+ function reqListener () {
+  alert(xhr.responseText);
+}
 
 var xhr = new XMLHttpRequest();
 
@@ -143,3 +145,5 @@ var ray = xhr.responseText.split(",");;
 alert(typeof(ray));
 
 alert(ray[1]);
+
+input.value = ray[0];
