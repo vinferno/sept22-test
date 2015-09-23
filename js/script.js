@@ -120,7 +120,7 @@ if (global_li_change === null){
     });
 
  function reqListener () {
-  alert(this.responseText);
+  alert(xhr.responseText);
 }
 
 var xhr = new XMLHttpRequest();
