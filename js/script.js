@@ -118,7 +118,7 @@ if (global_li_change === null){
 
 
     });
-alert('new2');
+alert('new3');
  function reqListener () {
   alert(xhr.responseText);
 }
@@ -130,7 +130,7 @@ xhr.send(null);
 alert(xhr.responseText);
 reqListener();
 
-var ray = xhr.responseText;
+var ray = xhr.responseText.split(",");;
 
 alert(typeof(ray));
 
