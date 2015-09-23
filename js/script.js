@@ -72,7 +72,7 @@ if (global_li_change === null){
  });
 
     var fu_new_list_item = function(){
-    
+
         var new_list_item = document.createElement('li');
         ul.appendChild(new_list_item);
         new_list_item.dataset.li_title= input.value;
@@ -128,10 +128,8 @@ if (global_li_change === null){
 
 
     });
-alert('new3');
- function reqListener () {
-  alert(xhr.responseText);
-}
+
+
 
 var xhr = new XMLHttpRequest();
 
