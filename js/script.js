@@ -118,14 +118,14 @@ if (global_li_change === null){
 
 
     });
-
+alert('new');
  function reqListener () {
-  alert(xhr.responseText);
+  alert(this.responseText);
 }
 
 var xhr = new XMLHttpRequest();
 
-xhr.open("GET", "o.txt",false);
+xhr.open("GET", "https://raw.githubusercontent.com/vinferno/sept22-test/master/js/o.txt",false);
 xhr.send(null);
 alert(xhr.responseText);
 reqListener();
