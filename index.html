@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+     *{
+   font-family: sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+    
+
+        ul{
+            display:flex;
+            flex-direction: column;
+        }
+
+        li{
+            height:50px;
+            width:300px;
+            list-style:none;
+            border:1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-animation: all 3s ease;
+            -o-animation: all 3s ease;
+            animation: all 3s ease;
+        }
+
+        div{
+            display: flex;
+             align-items: center;
+            justify-content: center;
+            border:1px solid black;
+            width: 100%;
+            height: 100%;
+            flex:1;
+
+        }
+        div:nth-of-type(2){
+            background-color: gray;
+            flex:2;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+<input type="text"/>
+
+<script src="js/script.js" ></script>
+
+</body>
+</html>
