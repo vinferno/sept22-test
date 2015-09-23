@@ -72,6 +72,7 @@ if (global_li_change === null){
  });
 
     var fu_new_list_item = function(){
+
         var new_list_item = document.createElement('li');
         ul.appendChild(new_list_item);
         new_list_item.dataset.li_title= input.value;
@@ -83,6 +84,15 @@ if (global_li_change === null){
         new_list_item.addEventListener('mouseup',function(){
        global_li_change = this;
         });
+        new_list_item.addEventListener('mouseover',function(){
+        	this.children[0].style.display = 'flex';
+        	this.children[2].style.display = 'flex';
+        })
+
+         new_list_item.addEventListener('mouseout',function(){
+        	this.children[0].style.display = 'none';
+        	this.children[2].style.display = 'none';
+        })
 
         var div = document.createElement('div');
         div.classList.add('minus');
@@ -119,13 +129,17 @@ if (global_li_change === null){
 
     });
 
- function reqListener () {
-  alert(this.responseText);
-}
+
 
 var xhr = new XMLHttpRequest();
 
-xhr.open("GET", "o.txt");
+xhr.open("GET", "https://raw.githubusercontent.com/vinferno/sept22-test/master/js/o.txt",false);
 xhr.send(null);
 alert(xhr.responseText);
 reqListener();
+
+var ray = xhr.responseText.split(",");;
+
+alert(typeof(ray));
+
+alert(ray[1]);
