@@ -125,7 +125,7 @@ if (global_li_change === null){
 
 var xhr = new XMLHttpRequest();
 
-xhr.open("GET", "o.txt");
+xhr.open("GET", "o.txt",false);
 xhr.send(null);
 alert(xhr.responseText);
 reqListener();
