@@ -119,7 +119,7 @@ if (global_li_change === null){
 
         input.value = '';
 
-    };
+    	};
 
     input.addEventListener('keydown', function(){
         if(event.keyCode == 13) {
